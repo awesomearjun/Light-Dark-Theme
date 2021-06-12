@@ -2,3 +2,8 @@
 	--textColor: black;
 	--bgColor: white;
 }
+
+body {
+	background-color: var(--bgColor);
+	color: var(--textColor);
+}
