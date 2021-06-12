@@ -1,7 +1,7 @@
 const root = document.querySelector(":root");
 const rootValues = getComputedStyle(root);
 
-function changeTheme(root, rootValues) {
+function changeThemeFunction(root, rootValues) {
 	if (rootValues.getPropertyValue("--textColor") == "black") {
 		root.style.setProperty("--textColor", "white");
 		root.style.setProperty("--bgColor", "black");
@@ -9,4 +9,8 @@ function changeTheme(root, rootValues) {
 		root.style.setProperty("--textColor", "black");
 		root.style.setProperty("--bgColor", "white");
 	}
+}
+
+function changeTheme() {
+	changeThemeFunction(root, rootValues);
 }
